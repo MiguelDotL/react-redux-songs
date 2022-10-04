@@ -10,7 +10,7 @@ const songReducer = () => {
 };
 
 const selectSongReducer = (selectedSong = null, action) => {
-    if (action.type === "SELECTED_SONG" && selectedSong !== null) {
+    if (action.type === "SELECTED_SONG") {
         return action.payload;
     }
     return selectedSong;
